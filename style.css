@@ -1,0 +1,162 @@
+@-ms-keyframes wiggle{0%{-ms-transform:rotate(3deg);}50%{-ms-transform:rotate(-3deg);}100%{-ms-transform:rotate(3deg);}}
+
+body{
+  display: block;
+  font-family: 'Open Sans', sans-serif !important;
+  height:100%;
+  margin:0;
+}
+
+div {
+    height:100vh;
+}
+
+button {
+  text-align: center;
+  align-items: flex-start;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+h3 {
+  font-size:28px;
+  color:#3D72A4;
+}
+
+.container{
+  max-width: 1280px;
+  padding: 40px 180px;
+}
+
+.jumbotron {
+  background: url(images/jumbo.jpeg) no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /*height: 800px;*/
+
+  /*margin-bottom: 0px;
+  padding:0px;*/
+}
+
+.jumbotron .container {
+  position: relative;
+  text-align: center;
+  top:28%;
+}
+
+.jumbotron .container h1 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #FFFFFF;
+  display: inline-block;
+  font-weight:700;
+  color: #FFFFFF;
+}
+
+.jumbotron .scroll-down {
+  height:80px;
+  width: 110px;
+  bottom:0px;
+  display: block;
+  position: absolute;
+  /*background-color: #FFFFFF;*/
+  right:5%;
+  content:"\e114";
+}
+
+.jumbotron .scroll-down .glyphicon {
+  color: #FFFFFF;
+      font-size: 30px;
+      padding-left:40px;
+      padding-top: 20px;
+      animation-name: wiggle;
+      animation-duration: 1.2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+}
+
+.fixed .navbar {
+    position: fixed;
+    top: 60px;
+}
+
+.navbar {
+    border: 0px;
+    background-color: #222222;
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    width: 110px;
+    z-index: 999;
+}
+
+.navbar .navbar-collapse {
+    padding: 0px;
+    max-height: none;
+}
+
+.navbar .navbar-nav {
+    float: none;
+}
+
+.navbar-nav {
+  margin:0px;
+}
+
+.nav {
+  padding-left: 0;
+}
+
+.navbar .nav > li {
+    display: block;
+    float: none;
+    height: 80px;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background: #3D72A4;
+    color: #FFFFFF;
+}
+
+.navbar .nav > li a {
+    display: block;
+    height: 80px;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+p.lead {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+p.desc {
+  text-align:center;
+  color:#727878;
+}
+
+.row {
+  margin-right:-15px;
+  margin-left:-15px;
+}
+
+#profile .row > div {
+    margin-bottom: 20px;
+}
+
+#profile h2 {
+  color: #3D72A4;
+}
+
+img.profileimg {
+  width: 100%;
+  max-width: 246px;
+  height: auto;
+  border-radius: 0px 0px 25px 25px;
+}
